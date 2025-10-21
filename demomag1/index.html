@@ -1,0 +1,259 @@
+<!doctype html>
+  <html><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ABN Weekly Magazine</title>
+  <style>
+    body{font-family:Segoe UI,Arial;margin:0;background:#f4f4f9;}
+    header{padding:30px;text-align:center;background:#007bff;color:white;}
+    h1{margin:0}
+    .toc{padding:20px;background:white;margin:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .toc h2{margin-top:0;color:#007bff;}
+    .toc ul{list-style:none;padding:0;margin:0;}
+    .toc li{margin:8px 0;}
+    .toc a{color:#007bff;text-decoration:none;}
+    .toc a:hover{text-decoration:underline;}
+    .magazine-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;padding:20px;}
+    .card{background:white;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);padding:16px;transition:0.2s;overflow:hidden;}
+    .card:hover{transform:translateY(-5px);}
+    .card h2{margin:0 0 10px;color:#007bff;font-size:20px;}
+    .card p{font-size:15px;line-height:1.5;color:#333;white-space:pre-wrap;max-height:6.6em;overflow:hidden;}
+    .card img{max-width:100%;border-radius:8px;margin-top:12px;display:block;}
+    .video-thumb{display:block;position:relative;margin-top:8px;}
+    .video-thumb img{width:100%;border-radius:8px;display:block;}
+    .video-thumb::after{content:"?";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:40px;color:white;text-shadow:0 0 10px black;}
+    .video-title{color:#007bff;text-decoration:none;font-size:18px;}
+    .watch-back{display:flex;justify-content:space-between;align-items:center;margin-top:10px;}
+    .read-link,.watch-link{color:#007bff;font-size:14px;font-weight:bold;text-decoration:none;padding:6px 10px;border-radius:6px;border:1px solid rgba(0,123,255,0.12);}
+    .read-link:hover,.watch-link:hover{text-decoration:underline;}
+    .back-link{color:#007bff;text-decoration:none;font-size:14px;}
+    .back-link:hover{text-decoration:underline;}
+    .cover-page{text-align:center;position:relative;}
+    .cover-image{width:100%;border-radius:0;}
+    .cover-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-shadow:0 0 12px rgba(0,0,0,0.8);}
+    .cover-text h1{font-size:42px;margin:0;}
+    .cover-text p{font-size:20px;margin-top:10px;}
+    @media (max-width:480px){
+      .magazine-container{grid-template-columns:1fr;padding:12px;}
+      .card{padding:12px;}
+    }
+  
+
+      body{background:linear-gradient(120deg,#fff0f4,#ffecec);color:#222;}
+      header{background:#ff9fb1;color:#fff;}
+      .toc{background:#fff;}
+      .card{background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(255,159,177,0.06);border:1px solid rgba(255,159,177,0.08);}
+      .card h2{color:#ff6f8b;}
+      .read-link,.watch-link{background:#ff6f8b;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;}
+      .read-link:hover,.watch-link:hover{background:#e65a71;}
+    </style>
+  </head>
+  <body>
+
+    <section class="cover-page" id="cover">
+      
+      <div class="cover-text">
+        <h1>ABN Weekly Magazine</h1>
+        
+      </div>
+    </section>
+<header style="display:none;"><h1>&#128214; ABN Weekly Magazine</h1></header>
+<section class="toc" id="toc">
+  <h2>Table of Contents</h2>
+  <ul><li><a href="#art01">Article: ఢిల్లీ ఎయిర్‌‌పోర్టు చూసి బ్రిటిషర్‌కు షాక్</a></li><li><a href="#art02">Article: రాహుల్ తరహాలోనే తేజస్వి ఓడిపోతారు.. ప్రశాంత్ కిశోర్ జోస్యం</a></li><li><a href="#art03">Article: బెంగాల్ సీఈఓకు మమతా బెదిరింపులు.. ఈసీ సీరియస్</a></li><li><a href="#art04">Article: నోబెల్ బహుమతి ఇవ్వడం సిగ్గుమాలిన చర్య</a></li><li><a href="#art05">Article: హైస్కూల్ విద్యార్థులకు గుడ్ న్యూస్.. రూ.కోటి నజరానా..</a></li><li><a href="#art06">Article: యువ వ్యాపారి గుప్తా హత్య కేసులో పూజా శకున్ పాండే అరెస్టు</a></li><li><a href="#art07">Article: అలాగైతే పాతబడిపోతాం</a></li><li><a href="#art08">Article: దీపికా ప్లేస్ లో అలియా.. ప్రభాస్ పక్కన సెట్ అవుతుందా?</a></li><li><a href="#art09">Article: ఛీఛీ.. సక్సెస్ కోసం ఇంత దిగజారాలా?</a></li><li><a href="#vid03">Video: బాలకృష్ణకు చెలగాటం.. చంద్రబాబుకు సంకటం</a></li><li><a href="#vid01">Video: అవమానిస్తే తిరగబడతా.. రౌడీలా మాట్లాడటం మానుకో</a></li><li><a href="#vid02">Video: లండన్ కు వైఎస్ జగన్</a></li><li><a href="#vid04">Video: పాత డివైజెస్‌ పక్కన పడేయాల్సిందేనా?</a></li><li><a href="#vid05">Video: చెబితే చాలు.. అక్షరాలా సృష్టించేస్తుంది</a></li><li><a href="#vid06">Video: జి-మెయిల్‌ ఎఐతో హ్యాకర్లకి లాభం ?</a></li><li><a href="#vid07">Video: ఈవీలకి ఇక బ్యాటరీ సమస్యలు ఉండవు!</a></li><li><a href="#vid08">Video: ఎఐ మీ వాట్సాప్‌లోకి వచ్చేసింది!</a></li></ul>
+</section>
+<div class="magazine-container">
+      <div class="card" id="art01">
+        <h2>ఢిల్లీ ఎయిర్‌‌పోర్టు చూసి బ్రిటిషర్‌కు షాక్</h2>
+        <p>రకరకాల హంగులతో వెలిగిపోతున్న ఢిల్లీ ఎయిర్‌పోర్టును చూసి ఓ బ్రిటిషర్ షాకైపోయారు. ఇది బ్రిటన్‌లోని సంపన్న వర్గాలుండే ప్రాంతంలా ఉందంటూ కామెంట్ చేశారు. ఈ వీడియో ప్రస్తుతం తెగ వైరల్ అవుతోంది.</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/British_Vlogger_Video_20d8b0f40b_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/prathyekam/delhi-airport-wows-british-man-with-pubs-shops-and-art-internet-reacts-please-visit-bengaluru-t2-pcs-spl-1455351.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art02">
+        <h2>రాహుల్ తరహాలోనే తేజస్వి ఓడిపోతారు.. ప్రశాంత్ కిశోర్ జోస్యం</h2>
+        <p>రఘోపూర్ నుంచి గెలిచే లాలూ, రబ్రీ ముఖ్యమంత్రి పదవులు చేపట్టారనీ, తేజస్వి కూడా రఘోపూర్‌ నుంచి రెండు సార్లు గెలిచారని, బిహార్ ఉప ముఖ్యమంత్రిగా రెండుసార్లు పనిచేశారని ప్రశాంత్ కిషోర్ చెప్పారు.</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/Tejaswi_Yadav_7847941b64_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/national/tejashwi-to-lose-raghopur-just-like-rahul-defeated-in-amethi-says-prashant-kishore-avr-1455355.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art03">
+        <h2>బెంగాల్ సీఈఓకు మమతా బెదిరింపులు.. ఈసీ సీరియస్</h2>
+        <p>బెంగాల్ సీఈఓ మనోజ్ అగర్వాల్ హద్దులు దాడితే ఆయనపై ఉన్న ‘అవినీతి ఆరోపణలు’ బయటపెడతామని ఒక సమావేశంలో మమతా బెనర్జీ పేర్కొన్నట్టు సమాచారం. ఈ సమావేశానికి రాష్ట్ర చీఫ్ సెక్రటరీ మనోజ్ పంత్, మంత్రి అరూప్ బిశ్వాస్ కూడా హాజరైనట్టు తెలుస్తోంది.</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/Untitled_24_99b21ad678_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/national/ec-seeks-video-of-mamata-banerjee-warning-state-poll-chief-avr-1455352.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art04">
+        <h2>నోబెల్ బహుమతి ఇవ్వడం సిగ్గుమాలిన చర్య</h2>
+        <p>నోబెల్ బహుమతి గ్రహీత, వెనిజులా ప్రతిపక్ష నేత మచాడోపై విమర్శలు వెల్లువెత్తున్నాయి. వామపక్ష భావజాలాన్ని వ్యతిరేకించే పాశ్చాత్య ధోరణికి ఆమె ఎంపిక నిదర్శనమని విమర్శకులు మండిపడుతున్నారు.</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/Machado_Criticism_9eb36b1675_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/international/why-nobel-peace-prize-winner-maria-corina-machado-is-facing-criticism-pcs-spl-1455350.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art05">
+        <h2>హైస్కూల్ విద్యార్థులకు గుడ్ న్యూస్.. రూ.కోటి నజరానా..</h2>
+        <p>హైస్కూల్‌ విద్యార్థుల్లో దాగిన ప్రతిభను వెలికి తీసేందుకు విద్యా శాఖ నడుం బిగించింది. అందుకోసం నిత్యం వివిధ కార్యక్రమాలు రూపొందిస్తోంది. తాజాగా 6 నుంచి 10వ తరగతి చదువుతున్న విద్యార్థుల కోసం ప్రత్యేక కార్యక్రమం రూపొందించింది.</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/High_School_Students_a4f28feea1_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/education/high-school-students-can-win-rs1-crore-viksit-bharat-buildathon-2025-innovation-contest-vvnp-1455335.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art06">
+        <h2>యువ వ్యాపారి గుప్తా హత్య కేసులో పూజా శకున్ పాండే అరెస్టు</h2>
+        <p>అభిషేక్ గుప్తాను కాల్చిచంపిన మహమ్మద్ ఫజల్‌ను పోలీసు అరెస్టు చేయగా.. ఈ హత్యకు పూజా, ఆమె భర్త రూ.3లక్షల సుపారీ ఇచ్చారని నిందితుడు పోలీసుల ముందు ఒప్పుకున్నాడు.</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/puja_7cd9345913_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/national/right-wing-leader-puja-shakun-pandey-arrested-in-aligarh-businessman-murder-avr-1455348.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art07">
+        <h2>అలాగైతే పాతబడిపోతాం</h2>
+        <p>దక్షిణాది, హిందీ సినిమాల ద్వారా ప్రేక్షకులపై తనదైన ముద్ర వేసిన హీరోయిన్‌ రాశీ ఖన్నా. తాజాగా ఆమె నటించిన ‘తెలుసు కదా’ సినిమా విడుదల కానుంది. ఈ నేపథ్యంలో ఆమెను ‘నవ్య’ పలకరించింది…</p>
+        <img src="https://media.andhrajyothy.com/media/2025/20250920/44_navya_fa12044f35_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.andhrajyothy.com/2025/navya/raashi-khanna-opens-up-ott-acting-growth-and-staying-relevant-1453213.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art08">
+        <h2>దీపికా ప్లేస్ లో అలియా.. ప్రభాస్ పక్కన సెట్ అవుతుందా?</h2>
+        <p>పాన్ ఇండియా స్టార్ ప్రభాస్ (Prabhas) నటించిన కల్కి 2898 ఏడి (Kalki 2898 AD) సినిమా భారీ విజయాన్ని అందుకున్న విషయం తెల్సిందే.</p>
+        <img src="https://media.chitrajyothy.com/media/2025/20250920/Prabhas_050ea0157f_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.chitrajyothy.com/2025/tollywood/will-alia-bhatt-replace-deepika-padukone-in-kalki-2-rp-67003.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="art09">
+        <h2>ఛీఛీ.. సక్సెస్ కోసం ఇంత దిగజారాలా?</h2>
+        <p>జనరేషన్ మారిపోయింది. ఒకప్పుడు బూతులు ఉంటే సినిమాను ప్రేక్షకులు పక్కకి నెట్టేసేవారు.</p>
+        <img src="https://media.chitrajyothy.com/media/2025/20250920/Dark_Chocolate_e8ed231067_v_jpg.webp" alt="">
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.chitrajyothy.com/2025/tollywood/vishwadev-bindu-madhavi-dark-chocolateteaser-out-rp-66999.html" target="_blank" rel="noopener noreferrer" class="read-link">&#128214; Read More</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid03">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=ddl6RA0lKo4&amp;pp=ygUKYWJuIHRlbHVndQ%3D%3D" target="_blank" class="video-title">బాలకృష్ణకు చెలగాటం.. చంద్రబాబుకు సంకటం</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=ddl6RA0lKo4&amp;pp=ygUKYWJuIHRlbHVndQ%3D%3D" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/ddl6RA0lKo4/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=ddl6RA0lKo4&amp;pp=ygUKYWJuIHRlbHVndQ%3D%3D" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid01">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=fD16UlsjtoI&amp;pp=ygUKYWJuIHRlbHVndQ%3D%3D" target="_blank" class="video-title">అవమానిస్తే తిరగబడతా.. రౌడీలా మాట్లాడటం మానుకో</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=fD16UlsjtoI&amp;pp=ygUKYWJuIHRlbHVndQ%3D%3D" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/fD16UlsjtoI/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=fD16UlsjtoI&amp;pp=ygUKYWJuIHRlbHVndQ%3D%3D" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid02">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=1A0lCt4WuV8" target="_blank" class="video-title">లండన్ కు వైఎస్ జగన్</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=1A0lCt4WuV8" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/1A0lCt4WuV8/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=1A0lCt4WuV8" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid04">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=6rtWHd2TtdY&amp;t=247s" target="_blank" class="video-title">పాత డివైజెస్‌ పక్కన పడేయాల్సిందేనా?</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=6rtWHd2TtdY&amp;t=247s" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/6rtWHd2TtdY/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=6rtWHd2TtdY&amp;t=247s" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid05">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=03sAfibbSvc" target="_blank" class="video-title">చెబితే చాలు.. అక్షరాలా సృష్టించేస్తుంది</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=03sAfibbSvc" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/03sAfibbSvc/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=03sAfibbSvc" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid06">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=84STwnYAWE4" target="_blank" class="video-title">జి-మెయిల్‌ ఎఐతో హ్యాకర్లకి లాభం ?</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=84STwnYAWE4" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/84STwnYAWE4/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=84STwnYAWE4" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid07">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=IbSgZ3KowUs&amp;t=7s" target="_blank" class="video-title">ఈవీలకి ఇక బ్యాటరీ సమస్యలు ఉండవు!</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=IbSgZ3KowUs&amp;t=7s" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/IbSgZ3KowUs/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=IbSgZ3KowUs&amp;t=7s" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    
+      <div class="card" id="vid08">
+        <h2>
+          <a href="https://www.youtube.com/watch?v=An2bOue0ZyY" target="_blank" class="video-title">ఎఐ మీ వాట్సాప్‌లోకి వచ్చేసింది!</a>
+        </h2>
+        <a href="https://www.youtube.com/watch?v=An2bOue0ZyY" target="_blank" class="video-thumb">
+          <img src="https://i.ytimg.com/vi/An2bOue0ZyY/hqdefault.jpg" alt="">
+        </a>
+        <div class="watch-back">
+          <a href="#toc" class="back-link">&#11013; Back to Index</a>
+          <a href="https://www.youtube.com/watch?v=An2bOue0ZyY" target="_blank" rel="noopener noreferrer" class="watch-link">&#9654; Watch Video</a>
+        </div>
+      </div>
+    </div>
+</body></html>
